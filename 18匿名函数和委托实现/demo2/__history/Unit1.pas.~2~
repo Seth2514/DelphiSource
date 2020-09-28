@@ -1,0 +1,19 @@
+unit Unit1;
+
+interface
+
+type
+  TEat = interface
+    procedure EatIng();
+  end;
+
+  TDog = class(TInterfacedObject, TEat)
+  end;
+
+  TCat = class(TInterfacedObject, TEat)
+  end;
+
+implementation
+
+end.
+

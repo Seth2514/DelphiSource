@@ -1,0 +1,37 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+{声明动态数组}
+type
+  StringArray = array of string;
+
+var
+  NameArray: StringArray;
+var
+indexs:Integer;
+procedure InitArray();
+begin
+   //设置长度
+  SetLength(NameArray, 20);
+  NameArray := StringArray.create('林志玲', '萧蔷');
+
+  {不兼容}
+//  NameArray := ['林志玲', '萧蔷'];
+  Writeln(Length(NameArray), ',', Low(NameArray));
+end;
+
+begin
+  NameArray := StringArray.create('林志玲', '萧蔷', '汤唯');
+  for indexs := Low(NameArray) to High(NameArray) do begin
+                                                       Writeln(NameArray[indexs]);
+                                                     end;
+
+  Readln;
+end.
+

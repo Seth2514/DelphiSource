@@ -1,0 +1,36 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+{*------------------------------------------------------------------------------
+匿名函数
+  定义格式
+  TFun = reference to function(const num: Integer): Integer;
+
+函数指针
+
+
+-------------------------------------------------------------------------------}
+uses
+  System.SysUtils;
+
+type
+  //声明一个函数类型
+  TFunDemo = function(Age: Integer): Integer;
+
+function Demo1(Age: Integer): Integer;
+begin
+
+end;
+
+var
+  fun1: TFunDemo;
+
+begin
+  fun1 := Demo1;
+  fun1(12);
+
+  Readln;
+end.
+

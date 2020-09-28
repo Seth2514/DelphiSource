@@ -1,0 +1,13 @@
+unit DaoUnit;
+
+interface
+uses System.Generics.Collections,Unit2;
+implementation
+
+
+//³õÊ¼»¯ÈÝÆ÷Àà
+
+var
+  Students: TDictionAry<Integer, TStudent>;
+  initialization
+end.

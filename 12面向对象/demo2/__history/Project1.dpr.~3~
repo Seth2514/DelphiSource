@@ -1,0 +1,71 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+{*------------------------------------------------------------------------------
+    1、怎么样去创建一个类
+          类的成员组成
+                  属性、成员变量、字段
+
+                  功能：方法、函数、过程、例程
+
+    2、如何创建一个类的对象
+
+    3、对象的生命周期
+          一个对象从创建到消亡的过程我们称为该对象的生命周期
+
+          1、对象的创建
+                  1、构造方法
+          2、对象的销毁
+                  1、free;
+                  2、Destroy;
+                  3、freeAndNil；
+                  4、nil   空值null
+
+    4、Delphi中单元的概念
+
+
+-------------------------------------------------------------------------------}
+
+uses
+  System.SysUtils;
+
+type
+  TUser = class
+        {字段}
+    FName: string;
+
+        {声明、定义}
+    procedure SetName(Name: string);
+        {销毁对象的方法}
+    destructor Destroy(); override;
+  end;
+
+
+{ TUser }
+{销毁对象的方法实现}
+destructor TUser.Destroy;
+begin
+  {调用父类销毁对象的方法}
+  inherited;
+end;
+
+procedure TUser.SetName(Name: string);
+begin
+  FName := Name;
+end;
+
+var
+  User: TUser;
+
+begin
+    {通过类的构造方法，创建一个类的对象}
+  User := nil;
+    //设置字段
+  User.FName := '许嵩';
+
+  Writeln(User.FName);
+  Readln;
+end.
+

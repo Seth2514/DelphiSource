@@ -1,0 +1,28 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  i: Integer;
+
+begin
+//caseÓï¾äµÄ±ê×¼Ð´·¨
+  i := 3;
+  case i of
+    1:
+      begin
+        Writeln('ÐãÑ½');
+      end;
+    2:
+      Writeln('ÐãÑ½ÐÖ‡N');
+  else
+    begin
+      Writeln('ÐãÑ½ÐÖ‡N2');
+    end;
+  end;
+  Readln;
+end.
+

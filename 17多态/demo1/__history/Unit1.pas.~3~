@@ -1,0 +1,18 @@
+unit Unit1;
+
+interface
+
+type
+  IColor=interface
+
+  end;
+  TAnimal = class(TInterfacedObject)
+  end;
+
+  TDog = class(TAnimal,TColor)
+  end;
+
+implementation
+
+end.
+

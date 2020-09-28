@@ -1,0 +1,58 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+{声明动态数组}
+type
+  StringArray = array of string;
+
+var
+  NameArray: StringArray;
+
+var
+  indexs: Integer;
+  var
+  Name:string;
+{动态数组初始化}
+procedure InitArray();
+begin
+   //设置长度
+  SetLength(NameArray, 20);
+  NameArray := StringArray.create('林志玲', '萧蔷');
+
+  {不兼容}
+//  NameArray := ['林志玲', '萧蔷'];
+  Writeln(Length(NameArray), ',', Low(NameArray));
+end;
+
+{遍历数组元素}
+procedure ListArray();
+  begin
+   NameArray := StringArray.create('林志玲', '萧蔷', '汤唯');
+  for indexs := Low(NameArray) to High(NameArray) do begin
+    Writeln(NameArray[indexs]);
+  end;
+end;
+{遍历数组元素2}
+procedure ListArray2();
+begin
+   NameArray := StringArray.create('林志玲', '萧蔷','汤唯','123');
+      {在Delphi7版本中不支持}
+      for Name in NameArray do
+      begin
+          Writeln(Name);
+      end;
+end;
+
+
+begin
+
+
+  Readln;
+end.
+

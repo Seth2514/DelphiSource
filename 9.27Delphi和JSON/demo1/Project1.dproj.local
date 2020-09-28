@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.09.27 09:41:18.107,=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020.09.27 09:43:36.431,D:\zjg\Delphi\9.27Delphi和JSON\demo1\Unit1.pas=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020.09.27 09:43:36.431,D:\zjg\Delphi\9.27Delphi和JSON\demo1\Unit1.dfm=D:\zjg\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2020.09.27 10:03:33.595,D:\zjg\Delphi\9.27Delphi和JSON\demo1\Project1.dproj=D:\zjg\Delphi\Project1.dproj</Transaction>
+    <Transaction>2020.09.27 10:03:43.886,=D:\zjg\Delphi\9.27Delphi和JSON\demo1\Unit2.pas</Transaction>
+    <Transaction>2020.09.27 10:04:01.503,D:\zjg\Delphi\9.27Delphi和JSON\demo1\domain\Unit2.pas=D:\zjg\Delphi\9.27Delphi和JSON\demo1\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,24 @@
+program Project3;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+  var
+    Fraction:Integer;
+begin
+Writeln('请输入要判断的分数:');
+Readln(Fraction);
+    if Fraction>=60 then
+       begin
+         Writeln('合格');
+       end
+       else
+       begin
+         Writeln('不合格');
+       end;
+
+   Readln();
+
+end.

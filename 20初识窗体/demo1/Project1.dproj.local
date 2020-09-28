@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/03 17:31:42.000.226,=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020/09/03 17:32:30.000.606,D:\zjg\Delphi\Unit1.pas=D:\zjg\Delphi\20初识窗体\demo1\Unit1.pas</Transaction>
+    <Transaction>2020/09/03 17:32:30.000.606,D:\zjg\Delphi\Unit1.dfm=D:\zjg\Delphi\20初识窗体\demo1\Unit1.dfm</Transaction>
+    <Transaction>2020/09/03 17:35:24.000.242,D:\zjg\Delphi\Project1.dproj=D:\zjg\Delphi\20初识窗体\demo1\Project1.dproj</Transaction>
+    <Transaction>2020/09/04 08:42:18.109,=D:\zjg\Delphi\20初识窗体\demo1\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

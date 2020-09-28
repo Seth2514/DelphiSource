@@ -1,0 +1,21 @@
+unit Unit1;
+
+interface
+
+type
+{定义一个接口}
+  IUsb = interface
+        {CTRL+SHIFT+G}
+    ['{D984360E-A29E-4988-9065-4455C9083C84}']
+    procedure read();
+  end;
+
+{定义一个类}
+
+  TComputer = class (IUsb)
+  end;
+
+implementation
+
+end.
+

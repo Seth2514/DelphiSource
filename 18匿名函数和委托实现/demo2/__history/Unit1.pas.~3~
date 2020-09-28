@@ -1,0 +1,27 @@
+unit Unit1;
+
+interface
+
+type
+  TEat = interface
+    procedure EatIng();
+  end;
+
+  TDog = class(TInterfacedObject, TEat)
+    procedure EatIng();
+  end;
+
+  TCat = class(TInterfacedObject, TEat)
+  end;
+
+implementation
+
+{ TDog }
+
+procedure TDog.EatIng;
+begin
+Writeln('¹·Ìø');
+end;
+
+end.
+

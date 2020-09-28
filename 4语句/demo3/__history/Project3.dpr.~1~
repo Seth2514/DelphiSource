@@ -1,0 +1,10 @@
+program Project3;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+begin
+
+end.

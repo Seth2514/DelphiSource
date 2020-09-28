@@ -1,0 +1,94 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+  {子界
+      为什么使用：为了防止出现越界
+
+      注意事项
+        1）子界要求上界和下界必须是有序的数据类型   整数、字符、枚举
+        2）子界的上界大于或者等于下界
+  }
+{定义格式}
+
+type
+  {枚举：季节}
+  ESeason = (SPRING, SUMMER, AUTUMN, WINTER);
+  {子界：12个月}
+
+  TSubBoundMonth = 1..12;
+  {
+    打印输入闰年还是平年，每个月份的天数和所属季节
+      //年份能被4整除；2、年份若是100的整数倍的话，需倍400整除
+  }
+
+var
+  Season: ESeason;
+  Months: TSubBoundMonth;
+  UserYear: Integer;
+  UserMonth: Integer;
+  {如果是闰年为true，平年为false}
+  IsLeapYear: Boolean;
+
+begin
+  Writeln('请输入一个年份:');
+  Readln(UserYear);
+  Writeln('请输入一个月份:');
+  Readln(UserMonth);
+
+  //默认为平年
+  IsLeapYear := False;
+  if UserYear mod 4 = 0 then begin
+    if (UserYear mod 100 = 0) then begin
+      if UserYear mod 400 = 0 then
+        Writeln(UserYear, '年是闰年');
+      IsLeapYear := True;
+    end
+    else begin
+      Writeln(UserYear, '年是闰年');
+      IsLeapYear := True;
+    end;
+
+  end;
+
+  //季节
+  if (UserMonth >= Low(Months)) and (UserMonth <= High(Months)) then begin
+
+    if (UserMonth >= 1) and (UserMonth <= 3) then begin
+      Write('当前是春季', UserMonth, '月的天数是');
+      case UserMonth of
+        1:
+          begin
+            Write(31, '天');
+          end;
+
+        2:
+          begin
+            if IsLeapYear then begin
+              Writeln(29, '天');
+          end
+      else
+        begin
+          Writeln(28, '天');
+        end;
+       end;
+        3:
+        begin
+          Writeln(31, '天');
+        end;
+
+
+    end;
+
+  end
+  else begin
+    Writeln('对不起您输入的月份错误！');
+  end;
+  Readln;
+
+end.
+

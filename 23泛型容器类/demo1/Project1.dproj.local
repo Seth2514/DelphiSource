@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.299,=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.129,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.dfm=D:\zjg\Delphi\23泛型容器类\demo1\AddFormUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.779,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.dfm=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.129,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.pas=D:\zjg\Delphi\23泛型容器类\demo1\AddFormUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.779,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.pas=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.298,D:\zjg\Delphi\Unit1.pas=D:\zjg\Delphi\23泛型容器类\demo1\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.790,=D:\zjg\Delphi\23泛型容器类\demo1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.911,=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.822,=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.298,D:\zjg\Delphi\Unit1.dfm=D:\zjg\Delphi\23泛型容器类\demo1\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.846,D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas=D:\zjg\Delphi\23泛型容器类\demo1\DaoUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.527,D:\zjg\Delphi\Project1.dproj=D:\zjg\Delphi\23泛型容器类\demo1\Project1.dproj</Transaction>
+    <Transaction>2020.09.27 08:42:16.410,=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas</Transaction>
+    <Transaction>2020.09.27 08:42:58.251,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.pas=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.pas</Transaction>
+    <Transaction>2020.09.27 08:42:58.251,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.dfm=D:\zjg\Delphi\23泛型容器类\demo1\Unit3.dfm</Transaction>
+    <Transaction>2020.09.27 08:45:22.946,D:\zjg\Delphi\23泛型容器类\demo1\AddForm.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

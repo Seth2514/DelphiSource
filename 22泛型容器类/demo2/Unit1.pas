@@ -1,0 +1,75 @@
+unit Unit1;
+
+interface
+
+uses
+  System.Generics.Collections, Unit2, Winapi.Windows, Winapi.Messages,
+  System.SysUtils, System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls,
+  Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    btnAdd: TButton;
+    btnDel: TButton;
+    btnFind: TButton;
+    btnUpadte: TButton;
+    btnclean: TButton;
+    edtUname: TEdit;
+    procedure FormCreate(Sender: TObject);
+    procedure btnFindClick(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  //学生列表
+  StudentList: TList<TStudent>;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnAddClick(Sender: TObject);
+var
+  Stu: TStudent;
+begin
+  if edtUname.Text <> '' then
+    StudentList.Add(TStudent.Create(edtUname.Text))
+  else begin
+    MessageBox(Self.Handle, '姓名不能为空', '温馨提示', MB_ICONWARNING);
+  end;
+      Memo1.Lines.Clear;
+  for Stu in StudentList do begin
+    Memo1.Lines.Add(Stu.Name);
+  end;
+end;
+
+
+procedure TForm1.btnFindClick(Sender: TObject);
+var
+  Stu: TStudent;
+begin
+      Memo1.Lines.Clear;
+  for Stu in StudentList do begin
+    Memo1.Lines.Add(Stu.Name);
+  end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+//初始化学生列表
+  StudentList := TList<TStudent>.Create;
+  StudentList.Add(TStudent.Create('小张'));
+  StudentList.Add(TStudent.Create('小陈'));
+  StudentList.Add(TStudent.Create('小黄'));
+  StudentList.Add(TStudent.Create('小绿'));
+  StudentList.Add(TStudent.Create('小蓝'));
+end;
+
+end.
+

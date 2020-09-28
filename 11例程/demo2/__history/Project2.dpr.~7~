@@ -1,0 +1,41 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+  {返回值:通过Result}
+function Add(Number1: Integer; Number2: Integer): Integer;
+begin
+
+  {return}
+  Result := Number1 + Number2;
+  Exit;
+  Writeln('**********');
+end;
+
+{返回值：通过引用获取运算结果}
+function Sub(Num1: Integer; Num2: Integer; var sum: Integer): Integer;
+begin
+
+  sum := Num1 - Num2;
+  Exit;
+end;
+
+{返回值：Out}
+function Mul():Integer;begin
+
+                       end;
+var
+  sum: Integer;
+
+begin
+
+  Sub(100, 200,sum);
+  Writeln(sum);
+  Readln;
+end.
+

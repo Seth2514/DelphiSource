@@ -1,0 +1,39 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+{*------------------------------------------------------------------------------
+什么是异常
+
+异常怎么使用
+-------------------------------------------------------------------------------}
+procedure MyDivFun(Num1, Num2: Integer);
+begin
+  if (Num2 = 0) then begin
+  //我们抛出一个异常
+    raise Exception.Create('除数不能为0');
+    //result:= Exception.Create('除数不能为0');exit;
+  end;
+  Writeln('******');
+end;
+
+begin
+  try
+    MyDivFun(10, 0);
+    { TODO -oUser -cConsole Main : Insert code here }
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+    on E: Exception do begin
+      Writeln(E.Message);
+    end;
+  end;
+
+  Readln;
+end.
+

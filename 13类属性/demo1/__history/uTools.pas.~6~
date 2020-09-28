@@ -1,0 +1,36 @@
+unit uTools;
+
+interface
+{声明区域}
+
+uses
+  Unit1;
+
+var
+  Name: string;
+
+type
+  TPerson = class
+      {字段、域}
+    private
+    FName: string;
+  end;
+
+implementation
+{实现区域}
+
+var
+  Age: Integer;
+
+initialization
+{初始化区域}
+  Name := '许嵩';
+  Age := 18;
+
+finalization
+{销毁区域}
+  Name := '';
+  Age := 0;
+
+end.
+

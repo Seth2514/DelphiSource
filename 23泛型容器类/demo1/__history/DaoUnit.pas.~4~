@@ -1,0 +1,26 @@
+unit DaoUnit;
+
+interface
+
+uses
+  System.Generics.Collections, Unit2;
+  //
+type TDao=class
+public
+添加
+class procedure Add(Studeng: TStudent);
+end;
+
+implementation
+
+
+//初始化容器类
+
+var
+  Students: TDictionAry<Integer, TStudent>;
+
+initialization
+  Students := TDictionAry<Integer, TStudent>.Create();
+
+end.
+

@@ -1,0 +1,28 @@
+unit Unit1;
+
+interface
+
+type
+  TPersion = class
+  public
+    procedure Talk();
+
+    {ÐéÄâ·½·¨}
+    function Run(): Integer; virtual;
+  end;
+
+    TUser=class(TPersion)
+      public
+      function Run():Integer;
+    end;
+implementation
+
+{ TPersion }
+
+procedure TPersion.Talk;
+begin
+  Writeln('Talk');
+end;
+
+end.
+

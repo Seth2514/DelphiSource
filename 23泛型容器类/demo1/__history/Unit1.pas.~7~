@@ -1,0 +1,48 @@
+unit Unit1;
+
+interface
+
+uses
+  AddFormUnit,Unit2, System.Generics.Collections, Winapi.Windows, Winapi.Messages,
+  System.SysUtils, System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls,
+  Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Memo1: TMemo;
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+//全局容器：存放学生信息
+
+var
+  Students: TDictionAry<Integer, TStudent>;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+FormAdd.Create(Self).ShowModal;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  //初始化
+  Students := TDictionAry<Integer, TStudent>.Create();
+end;
+
+end.
+
