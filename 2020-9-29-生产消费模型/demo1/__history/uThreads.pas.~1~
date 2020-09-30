@@ -1,0 +1,27 @@
+unit uThreads;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  aa = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  end;
+
+implementation
+
+
+
+{ aa }
+
+procedure aa.Execute;
+begin
+  { Place thread code here }
+end;
+
+end.

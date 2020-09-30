@@ -1,0 +1,44 @@
+unit uThreads;
+
+interface
+
+uses
+  System.Classes;
+
+type
+//生产线程类
+  TProductionThread = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  end;
+//消费线程类
+  TconsumptionThread = class(TThread)
+  protected
+    procedure Execute; override;
+  end;
+
+implementation
+
+
+
+
+{ TProductionThread }
+
+procedure TProductionThread.Execute;
+begin
+  inherited;
+
+end;
+
+{ TconsumptionThread }
+
+procedure TconsumptionThread.Execute;
+begin
+  inherited;
+
+end;
+
+end.
+

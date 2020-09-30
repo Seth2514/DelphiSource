@@ -1,0 +1,75 @@
+unit uThreads;
+
+interface
+
+uses
+ uDomain, System.Classes;
+
+type
+//生产线程类
+  TProductionThread = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  public
+  //构造方法
+    constructor Create; override;
+    constructor Create(product: Tproduct); override;
+  end;
+//消费线程类
+
+  TconsumptionThread = class(TThread)
+  protected
+    procedure Execute; override;
+  public
+  //构造方法
+    constructor Create; override;
+    constructor Create(product: Tproduct); override;
+  end;
+
+implementation
+
+
+
+
+{ TProductionThread }
+//有参构造
+constructor TProductionThread.Create(product: Tproduct);
+begin
+
+end;
+
+//空参构造
+constructor TProductionThread.Create;
+begin
+  inherited Create (True);
+end;
+
+//启动线程的代码
+procedure TProductionThread.Execute;
+begin
+  inherited;
+
+end;
+
+{ TconsumptionThread }
+
+constructor TconsumptionThread.Create(product: Tproduct);
+begin
+
+end;
+
+constructor TconsumptionThread.Create;
+begin
+
+end;
+
+procedure TconsumptionThread.Execute;
+begin
+  inherited;
+
+end;
+
+end.
+

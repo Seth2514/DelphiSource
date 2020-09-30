@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.09.28 08:51:27.092,=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020.09.28 08:51:59.275,D:\zjg\DelphiSource\2020-9-28-多线程\demo1\Unit1.dfm=D:\zjg\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2020.09.28 08:51:59.275,D:\zjg\DelphiSource\2020-9-28-多线程\demo1\Unit1.pas=D:\zjg\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020.09.28 08:52:46.237,D:\zjg\DelphiSource\2020-9-28-多线程\demo1\Project1.dproj=D:\zjg\Delphi\Project1.dproj</Transaction>
+    <Transaction>2020.09.28 11:32:03.263,=D:\zjg\DelphiSource\2020-9-28-多线程\demo1\TABPGDLG.pas</Transaction>
+    <Transaction>2020.09.28 11:32:51.714,=D:\zjg\DelphiSource\2020-9-28-多线程\demo1\Unit2.pas</Transaction>
+    <Transaction>2020.09.28 11:33:07.968,D:\zjg\DelphiSource\2020-9-28-多线程\demo1\UThreads.pas=D:\zjg\DelphiSource\2020-9-28-多线程\demo1\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

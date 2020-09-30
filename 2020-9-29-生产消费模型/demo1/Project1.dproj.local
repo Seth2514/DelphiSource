@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.09.29 15:00:28.541,=D:\zjg\DelphiSource\Unit1.pas</Transaction>
+    <Transaction>2020.09.29 15:01:37.159,D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Unit1.dfm=D:\zjg\DelphiSource\Unit1.dfm</Transaction>
+    <Transaction>2020.09.29 15:01:37.159,D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Unit1.pas=D:\zjg\DelphiSource\Unit1.pas</Transaction>
+    <Transaction>2020.09.29 15:01:58.470,=D:\zjg\DelphiSource\Unit2.pas</Transaction>
+    <Transaction>2020.09.29 15:02:25.746,D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\uThreads.pas=D:\zjg\DelphiSource\Unit2.pas</Transaction>
+    <Transaction>2020.09.29 15:02:44.438,D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Project1.dproj=D:\zjg\DelphiSource\Project1.dproj</Transaction>
+    <Transaction>2020.09.29 15:11:50.455,=D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Unit2.pas</Transaction>
+    <Transaction>2020.09.29 15:12:52.359,=D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Unit2.pas</Transaction>
+    <Transaction>2020.09.29 15:13:03.331,D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\uDomain.pas=D:\zjg\DelphiSource\2020-9-29-生产消费模型\demo1\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
